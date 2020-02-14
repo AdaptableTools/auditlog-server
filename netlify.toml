@@ -1,0 +1,7 @@
+[dev]
+  port = 3333 # Port that the dev server will be listening on
+  functionsPort = 44444 # port for functions server
+  publish = "functions" 
+
+[build]
+  functions = "functions"

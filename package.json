@@ -1,0 +1,24 @@
+{
+  "name": "auditlog-server",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Demo audit log server built on serverless (via netlify)",
+  "main": "index.js",
+  "scripts": {
+    "build:server": "netlify-lambda build functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaptableTools/auditlog-server.git"
+  },
+  "author": "adaptabletools",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdaptableTools/auditlog-server/issues"
+  },
+  "homepage": "https://github.com/AdaptableTools/auditlog-server#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1"
+  },
+  "devDependencies": {}
+}
