@@ -6,7 +6,7 @@ exports.handler = function(event, context, callback) {
     body = { okay: true };
   }
 
-  callback({
+  callback(null, {
     statusCode: 200,
     headers: {
       "Content-Type": "application/json",
