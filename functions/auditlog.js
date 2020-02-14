@@ -3,7 +3,7 @@ exports.handler = function(event, context, callback) {
   try {
     body = JSON.parse(event.body);
   } catch (ex) {
-    body = { ok: true };
+    body = { okay: true };
   }
 
   return {
@@ -11,8 +11,7 @@ exports.handler = function(event, context, callback) {
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "*",
-      "Access-Control-Allow-Headers": "*"
+      "Access-Control-Allow-Credentials": true
     },
     body: JSON.stringify(body || "")
   };
