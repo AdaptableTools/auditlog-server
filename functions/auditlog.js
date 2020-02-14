@@ -11,7 +11,8 @@ exports.handler = function(event, context, callback) {
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Credentials": true
+      "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "User-Agent, Content-Type, Referer"
     },
     body: JSON.stringify(body || "")
   });
