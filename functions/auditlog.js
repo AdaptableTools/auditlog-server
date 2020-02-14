@@ -6,12 +6,14 @@ exports.handler = function(event, context, callback) {
     body = { ok: true };
   }
 
-  callback(null, {
+  return {
     statusCode: 200,
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Allow-Headers": "*"
     },
     body: JSON.stringify(body || "")
-  });
+  };
 };
