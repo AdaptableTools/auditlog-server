@@ -6,7 +6,7 @@ exports.handler = function(event, context, callback) {
     body = { okay: true };
   }
 
-  return {
+  callback({
     statusCode: 200,
     headers: {
       "Content-Type": "application/json",
@@ -14,5 +14,5 @@ exports.handler = function(event, context, callback) {
       "Access-Control-Allow-Credentials": true
     },
     body: JSON.stringify(body || "")
-  };
+  });
 };
